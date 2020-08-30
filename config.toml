@@ -5,3 +5,6 @@ theme = "ananke"
 
 [params]
   featured_image = "/images/featured_image.jpg"
+
+[minify]
+  minifyOutput = true
