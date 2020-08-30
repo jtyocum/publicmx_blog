@@ -2,3 +2,6 @@ baseURL = "https://publicmx.com/"
 languageCode = "en-us"
 title = "Mostly Rambling"
 theme = "ananke"
+
+[params]
+  featured_image = "/images/featured_image.jpg"
