@@ -1,0 +1,4 @@
+baseURL = "https://publicmx.com/"
+languageCode = "en-us"
+title = "Mostly Rambling"
+theme = "ananke"
