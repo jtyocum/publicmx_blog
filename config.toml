@@ -4,6 +4,7 @@ title = "Mostly Rambling"
 theme = "ananke"
 
 [params]
+  twitter = "https://twitter.com/jyocum84"
   featured_image = "/images/featured_image.jpg"
 
 [minify]
