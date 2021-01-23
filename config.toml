@@ -9,3 +9,17 @@ theme = "basicwebtheme"
 
 [minify]
   minifyOutput = true
+
+[menu]
+
+  [[menu.main]]
+    title = "Home"
+    name = "The homepage"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    title = "Posts"
+    name = "All posts"
+    url = "/posts"
+    weight = 2
