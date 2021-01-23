@@ -1,11 +1,11 @@
-baseURL = "https://www.publicmx.com/"
+relativeURLs = true
 languageCode = "en-us"
 title = "Mostly Rambling"
-theme = "ananke"
+theme = "basicwebtheme"
 
 [params]
-  twitter = "https://twitter.com/jyocum84"
-  featured_image = "/images/featured_image.jpg"
+  headertext = "Mostly Rambling"
+  bigtitle = true
 
 [minify]
   minifyOutput = true

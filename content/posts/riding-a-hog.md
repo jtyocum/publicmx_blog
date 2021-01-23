@@ -1,7 +1,6 @@
 ---
 title: "Riding a Hog"
 date: 2020-09-07
-featured_image: images/riding-a-hog.jpg
 ---
 
 It's been a year since I made the switch. I mean, switching from a metric adventure bike to a Harley-Davidson. It's quite the switch, so how did I get here?
