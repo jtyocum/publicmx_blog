@@ -2,6 +2,8 @@ relativeURLs = true
 languageCode = "en-us"
 title = "Mostly Rambling"
 theme = "basicwebtheme"
+enableGitInfo = true
+disableKinds = ["taxonomy", "term"]
 
 [params]
   headertext = "Mostly Rambling"
