@@ -7,20 +7,22 @@ SystemD is loved by some, hated by others. It offers a wide range of features, b
 
 Below, is an example of a sandbox configuration for Apache on Ubuntu 18.04. You'll notice several entries under SystemCallFilter. If you are running a newer distro, check your systemd man pages. It may offer more system call groups, making this configuration a bit simpler.
 
-	[Service]
-	CapabilityBoundingSet=~CAP_SYS_ADMIN
-	ProtectSystem=strict
-	ProtectHome=yes
-	ReadWritePaths=/run /var/log /var/www /var/cache /tmp /var/tmp
-	PrivateDevices=yes
-	ProtectClock=yes
-	ProtectKernelTunables=yes
-	ProtectKernelModules=yes
-	ProtectKernelLogs=yes
-	ProtectControlGroups=yes
-	LockPersonality=yes
-	SystemCallFilter=~@clock @cpu-emulation @debug @obsolete @module @mount @raw-io @reboot @swap
-	SystemCallErrorNumber=EPERM
+```
+[Service]
+CapabilityBoundingSet=~CAP_SYS_ADMIN
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/run /var/log /var/www /var/cache /tmp /var/tmp
+PrivateDevices=yes
+ProtectClock=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+LockPersonality=yes
+SystemCallFilter=~@clock @cpu-emulation @debug @obsolete @module @mount @raw-io @reboot @swap
+SystemCallErrorNumber=EPERM
+```
 
 How do we go from sandbox config, to actual sandboxed service? Easy, just drop the config file into /etc/systemd/system/SOMESERVICE.service.d/sandbox.conf. You could use a different file name, but that seems most logical. Then, just use systemctl to reload, and then restart the service.
 

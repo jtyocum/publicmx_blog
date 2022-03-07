@@ -1,13 +1,16 @@
 relativeURLs = true
 languageCode = "en-us"
 title = "Mostly Rambling"
-theme = "basicwebtheme"
-enableGitInfo = true
+theme = "etch"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  headertext = "Mostly Rambling"
-  bigtitle = true
+  description = "Just a bunch of rambling about almost anything."
+  dark = "auto"
+  highlight = true
 
 [minify]
   minifyOutput = true
@@ -15,13 +18,12 @@ disableKinds = ["taxonomy", "term"]
 [menu]
 
   [[menu.main]]
-    title = "Home"
-    name = "The homepage"
-    url = "/"
+    identifier = "all posts"
+    title = "all posts"
+    name = "all posts"
+    url = "/posts"
     weight = 1
 
-  [[menu.main]]
-    title = "Posts"
-    name = "All posts"
-    url = "/posts"
-    weight = 2
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true
