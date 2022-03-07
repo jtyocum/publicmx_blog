@@ -1,4 +1,4 @@
-relativeURLs = true
+baseURL = "https://publicmx.com"
 languageCode = "en-us"
 title = "Mostly Rambling"
 theme = "etch"
