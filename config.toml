@@ -25,7 +25,7 @@ disableKinds = ["taxonomy", "term"]
     weight = 10
 
 [permalinks]
-  posts = "/:title/"
+  posts = "/:filename/"
   
 [markup.goldmark.renderer]
   # Allows HTML in Markdown
