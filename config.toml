@@ -1,4 +1,4 @@
-baseURL = "https://publicmx.com/"
+baseURL = "https://publicmx.com"
 languageCode = "en-us"
 title = "Mostly Rambling"
 theme = "etch"
